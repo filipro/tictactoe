@@ -1,0 +1,42 @@
+Krustiņi-Nulliņi Spēles Dokumentācija
+
+   Apraksts
+Krustiņi-Nulliņi ir klasiska divu spēlētāju galda spēle, kurā mērķis ir iegūt trīs vienādus simbolus rindā, kolonnā vai diagonālē. Šajā versijā spēlētājs sacenšas pret datora pretinieku ar trīs grūtības līmeņiem.
+
+    Faili
+- `index.html` - HTML fails, kas satur spēles struktūru un saskarni.
+- `styles.css` - CSS fails, kas nodrošina vizuālo izkārtojumu un dizainu.
+- `script.js` - JavaScript fails, kas satur spēles loģiku un mijiedarbību.
+
+    Spēles Darbība
+1. Spēlētājs sāk ar "X" simbolu.
+2. Spēlētājs izdara gājienu, nospiežot uz tukša lauciņa.
+3. Pēc spēlētāja gājiena gājienu veic dators.
+4. Spēle turpinās, līdz kāds uzvar vai beidzas neizšķirti.
+
+     Grūtības Līmeņi
+- **Vieglais** - Dators izdara nejaušus gājienus, bet var bloķēt spēlētāja uzvaru.
+- **Vidējais** - Dators izmanto daļus minimax algoritma gājienus, bet ne vienmēr optimālus.
+- **Neuzvaramais** - Dators izmanto pilnu minimax algoritmu, padarot to praktiski neuzvaramu.
+
+     Funkciju Apraksts
+- `createboard()` - Izveido un attēlo spēles laukumu.
+- `handleMove(event)` - Apstrādā spēlētāja gājienu un pārbauda, vai ir uzvarētājs.
+- `botMove()` - Veic datora gājienu, pamatojoties uz grūtības līmeni.
+- `geteasymove()` - Aprēķina vieglās grūtības līmeņa gājienu.
+- `checkwinner()` - Pārbauda, vai kāds ir uzvarējis.
+- `updateboard()` - Atjaunina spēles laukuma vizuālo attēlojumu.
+- `resetgame()` - Atiestata spēli, lai to varētu sākt no jauna.
+- `minimax(board, player)` - Izmanto minimax algoritmu optimāla gājiena noteikšanai.
+
+    Kā Spēlēt?
+1. Atver `index.html` failu interneta pārlūkprogrammā.
+2. Izvēlies grūtības līmeni no nolaižamā saraksta.
+3. Klikšķini uz tukšiem laukumiem, lai veiktu gājienus.
+4. Uzvar tas, kurš pirmais iegūst trīs savus simbolus rindā, kolonnā vai diagonālē.
+5. Nospied "Sākt no jauna", lai restartētu spēli.
+
+   Prasības
+- Spēli var atvērt jebkurā modernā interneta pārlūkā (Chrome, Firefox, Edge, Safari).
+- Nav nepieciešams serveris, spēle darbojas lokāli.
+
